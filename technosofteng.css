@@ -1,8 +1,37 @@
-@media screen and (min-device-width:768px) and (max-device-width:960px){
+@media screen and (min-device-width:320px) {
+    .video-txt {
+        flex-wrap: wrap;
+
+    }
+    .block-txt {
+        
+        padding-left :0px !important;
+    }
+    
+    .img-para{
+        flex-wrap:wrap;
+    }
+    .para{
+        padding-left:0px!important;
+    }
+}
+@media screen and (min-device-width:320px) and (max-device-width:1280px){
+    .contact{
+        display:none!important;
+    }
+    .logoimg{
+        display:block!important;
+        margin-left: auto!important;
+        margin-right:auto!important;
+    }
     .logo img{
         height:90px !important;
-        align-items: center;
     }
+
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:960px){
+   
     .email{
         padding-top:0px!important;
         font-size:15px !important;
@@ -10,7 +39,7 @@
     .para{
         padding-left:50px !important;
     }
-    .video-txt {
+    /* .video-txt {
         flex-wrap: wrap;
 
     }
@@ -20,6 +49,13 @@
     }
     .video{
         padding-right:0px!important;
+    } */
+    .img-txt{
+        flex-wrap:wrap;
+    }
+    .para{
+        width:0px!important;
+        padding-left:0px!important;
     }
 }
 @media screen and (min-device-width: 770px) and (max-device-width: 1080px){
@@ -52,23 +88,29 @@ body{
     display:flex;
     justify-content: space-between;
 }
-
+.contact{
+    display:flex;
+}
+.hamburger{
+    display:none;
+}
 .email{
     font-family:Nunito Sans, Bold;
     font-size:18px;
-    color:#1c1c1c;
+    color:#600010;
     line-height:24px;
     padding-top:80px;
+    padding-right:100px;
 }
 .quote_req button{
     border-radius:20px;
-    color:#9f0033;
-    border:2px solid #9f0033;
-    background:#ffffff;
+    color:#ffffff;
+    background:#600010;
     padding:10px;
     font-size:17px;
     font-weight: 700;
     margin-top:65px;
+    width:223px;
     
 }
 
@@ -235,7 +277,6 @@ body{
     
 }
 .video{
-   
     padding-right:15px;
 }
 .video iframe{
@@ -329,4 +370,12 @@ body{
     background-position: right;
     background-size:cover;
     padding-bottom:30px;
+}
+.newbg{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    opacity:0.2;
 }
