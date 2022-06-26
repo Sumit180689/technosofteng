@@ -6,19 +6,23 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="technosofteng.js"></script>
     </head>
     <body onload="onBodyLoad()">
         <div class="logo side_space">
-            <div class="logoimg"><img src="Core-Rosion_logo.png" alt="" style="height:150px;">
+            <div ><img class="logoimg" src="Core-Rosion_logo.png" alt="">
             </div>            
             <div class="contact">
-                <div class="email"><span><img src="envelope-solid.svg" style="width:20px;padding-right:10px;">Email Us</span></div>
-                <div class="email"><span><img src="phone-solid.svg" style="width:20px;padding-right:10px;"></span>Phone: 855.998.7345</div>
-                <div class="quote_req"><button>Request a Quote</button></div>
+                <div class="hamburger"><img src="bars-solid.svg" alt="" style="width:20px;padding-right:20px"></div>
+                <div class="email"><img src="envelope-solid.svg" style="width:20px;padding-right:10px;"><span class="hide">Email Us</span></div>
+                <div class="email"><img src="phone-solid.svg" style="width:20px;padding-right:10px;"><span class="hide">Phone: 855.998.7345</span></div>
+                <div class="search"><img src="magnifying-glass-solid.svg"style="width:20px;padding-right:20px"></div>
+                <div class="quote_req"><button class="hide">Request a Quote</button><button class="show">RFQ</button></div>
+                
+                
             </div>
         </div>
-        <div class="hamburger"><img src="Hamburger_icon.svg.png" alt="" style="height:30px"></div>
         <div class="menu side_space">
             <span class="item">Products</span>
             <span class="item"> Industries Served </span>
@@ -35,22 +39,31 @@
                     
                     <div class="text">
                         <h3>DISTRIBUTOR AND MANUFACTURER'S REPRESENTATIVE OF</h3> 
-                        <h2>Tanks and Related Equipment to the Municipal and Industrial Markets</h2>
+                        <h2 class="sect-h2">Tanks and Related Equipment to the Municipal and Industrial Markets</h2>
                     </div>
                     <button class="btn">Get In Touch</button>
                 </div>
             </div>
         </div>
         <div class="section2">
-            <div class="menu2">
+            <div id="menubg"class="menu2">
                 <div id="tab_tanks"class="li1" onclick="show('tanks')">TANKS</div>
                 <div id="tab_mixers"class="li1" onclick="show('mixers')">MIXERS</div>
                 <div id="tab_briners" class="li1" onclick="show('briners')">BRINERS</div>
                 <div id="tab_polytank"class="li1" onclick="show('polytank')">POLYTANK ACCESERIES</div>
                 <div id="tab_level"class="li1" onclick="show('level')">LEVEL CONTROL AND INDICATION</div>
             </div>
+            <div class="mobile_menu2">
+                <select id="userselectedtab">
+                    <option value="tanks">TANKS</option>
+                    <option value="mixers">MIXERS</option>
+                    <option value="briners">BRINERS</option>
+                    <option value="polytank">POLYTANK ACCESERIES</option>
+                    <option value="level">LEVEL CONTROL AND INDICATION</option>
+                </select>
+            </div>
             <div id="tanks" class="img-txt side_space ">
-                <img class="newbg" src="sketch.jpg" alt="">
+                <!-- <img class="newbg" src="sketch.jpg" alt=""> -->
                 <img src="HTB17_g0XODxK1Rjy1zc761GeXXa1.jpg" alt="" style="border-radius:50%">
                 <div class="txt1">
                     <h3>Tanks</h3>
@@ -123,7 +136,7 @@
         </div>
         <div class="seciton4">
             <div class="img-para side_space">
-                <img src="circular-flowchart.webp" alt="" style="height:410px;">
+                <div class="last_img"><img src="circular-flowchart.webp" alt=""></div>
                 <div class="para">
                     <h3>Exceed Your Expectations</h3>
                     <p>Core-Rosion Products has served the industrial and municipal markets by representing the best names in the business of tanks, wastewater treatment equipment, chemical processing equipment and custom lining systems.</p>
